@@ -11,6 +11,10 @@ for device in $devices; do
     if [[ -d vendor/$device ]]; then rm -rf vendor/$device; fi
 done
 
+if [[ -d "vendor/google" ]]; then 
+    rm -rf vendor/google
+fi
+
 if [ -d "evolution/OTA" ]; then
     rm -rf evolution/OTA
 fi
