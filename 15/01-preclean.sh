@@ -18,3 +18,7 @@ fi
 if [ -d "evolution/OTA" ]; then
     rm -rf evolution/OTA
 fi
+
+cd vendor/gms
+git reset HEAD --hard
+cd /evo-10
