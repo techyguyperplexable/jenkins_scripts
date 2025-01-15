@@ -20,6 +20,6 @@ initial_images=$(jq -r '.response[0].initial_installation_images[]' "$json")
 # Upload found images
 for image in $initial_images; do
     echo "Uploading $image..."
-    rclone copy out/target/product/$device/$image*.img cloudflare:evolution-builds/$device/$version/
+    rclone copy out/target/product/$device/$image.img cloudflare:evolution-builds/$device/$version/
     echo " "
 done
