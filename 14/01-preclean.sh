@@ -14,3 +14,7 @@ done
 if [ -d "evolution/OTA" ]; then
     rm -rf evolution/OTA
 fi
+
+if [ -d "hardware/lineage/compat" ]; then
+    rm -rf hardware/lineage/compat
+fi
