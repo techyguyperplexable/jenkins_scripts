@@ -4,7 +4,7 @@ if  [ -f ".repo/local_manifests/roomservice.xml" ]; then
     rm .repo/local_manifests/roomservice.xml
 fi
 
-devices="asus xiaomi realme motorola miromax wingtech oneplus lenovo samsung"
+devices="asus xiaomi realme motorola miromax wingtech oneplus lenovo samsung google"
 for device in $devices; do
     if [[ -d device/$device ]]; then rm -rf device/$device; fi
     if [[ -d kernel/$device ]]; then rm -rf kernel/$device; fi
