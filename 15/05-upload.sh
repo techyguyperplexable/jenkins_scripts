@@ -4,7 +4,7 @@ device=$1
 
 # Extract Android Version from json
 filename=$(echo out/target/product/$device/EvolutionX-*.zip)
-version=$(echo $filename | cut -d "-" -f 2)
+version=$(echo $filename | cut -d "-" -f 2 | cut -d "." -f 1)
 
 # Upload main rom
 echo "Uploading main rom..."
