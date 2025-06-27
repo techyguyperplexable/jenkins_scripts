@@ -8,7 +8,7 @@ export CCACHE_MAXSIZE=300G
 
 . build/envsetup.sh
 
-lunch lineage_$device-$target-user
+lunch lineage_$device-$target-userdebug
 
 # Generate Vendor
 bash ./lineage/scripts/pixel/device.sh $device
