@@ -11,6 +11,10 @@ for device in $devices; do
     if [[ -d vendor/$device ]]; then rm -rf vendor/$device; fi
 done
 
+if [[ -d "hardware/xiaomi" ]]; then
+    rm -rf hardware/xiaomi
+fi
+
 if [[ -d "vendor/google" ]]; then 
     rm -rf vendor/google
 fi
